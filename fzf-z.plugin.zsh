@@ -68,6 +68,7 @@ fzfz-file-widget() {
     local ret=$?
     zle redisplay
     typeset -f zle-line-init >/dev/null && zle zle-line-init
+    zle accept-line
     return $ret
 }
 
